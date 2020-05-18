@@ -394,36 +394,46 @@ void process_action(keyrecord_t *record, action_t action) {
         case ACT_MOUSEKEY:
             if (event.pressed) {
                 switch (action.key.code) {
+#    ifdef PS2_MOUSE_ENABLE
                     case KC_MS_BTN1:
                         tp_buttons |= (1 << 0);
+                        mousekey_on(action.key.code);
                         break;
                     case KC_MS_BTN2:
                         tp_buttons |= (1 << 1);
+                        mousekey_on(action.key.code);
                         break;
                     case KC_MS_BTN3:
                         tp_buttons |= (1 << 2);
+                        mousekey_on(action.key.code);
                         break;
+#    endif
                     default:
+                        mousekey_on(action.key.code);
+                        mousekey_send();
                         break;
                 }
-                mousekey_on(action.key.code);
-                mousekey_send();
             } else {
                 switch (action.key.code) {
+#    ifdef PS2_MOUSE_ENABLE
                     case KC_MS_BTN1:
                         tp_buttons &= ~(1 << 0);
+                        mousekey_off(action.key.code);
                         break;
                     case KC_MS_BTN2:
                         tp_buttons &= ~(1 << 1);
+                        mousekey_off(action.key.code);
                         break;
                     case KC_MS_BTN3:
                         tp_buttons &= ~(1 << 2);
+                        mousekey_off(action.key.code);
                         break;
+#    endif
                     default:
+                        mousekey_off(action.key.code);
+                        mousekey_send();
                         break;
                 }
-                mousekey_off(action.key.code);
-                mousekey_send();
             }
             break;
 #endif
