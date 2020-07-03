@@ -6,7 +6,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #if defined MIRYOKU_BASE_QWERTY
   [BASE] = LAYOUT_miryoku(
     KC_Q,              KC_W,              KC_E,              KC_R,              KC_T,              KC_Y,              KC_U,              KC_I,              KC_O,              KC_P,
-    KC_A,              KC_S,              KC_D,              KC_F,              KC_G,              KC_H,              KC_J,              KC_K,              KC_L,              KC_QUOT,
+    KC_A,              KC_S,              KC_D,              KC_F,              KC_G,              KC_H,              KC_J,              KC_K,              KC_L,              KC_SCLN,
     LSFT_T(KC_Z),      LALT_T(KC_X),      LCTL_T(KC_C),      LGUI_T(KC_V),      ALGR_T(KC_B),      ALGR_T(KC_N),      LGUI_T(KC_M),      LCTL_T(KC_COMM),   LALT_T(KC_DOT),    LSFT_T(KC_SLSH),
     KC_NP,             KC_NP,             LT(MEDR, KC_ESC),  LT(NAVR, KC_SPC),  LT(MOUR, KC_TAB),  LT(NSSL, KC_ENT),  LT(NSL, KC_BSPC),  LT(FUNL, KC_DEL),  KC_NP,             KC_NP
   ),
@@ -77,15 +77,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NP,    KC_NP,   KC_APP,  KC_SPC,  KC_TAB,  KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
   ),
   [NSL] = LAYOUT_miryoku(
-    KC_LBRC, KC_1,    KC_2,    KC_3,    KC_RBRC, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_RST,
-    KC_SCLN, KC_4,    KC_5,    KC_6,    KC_EQL,  KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
-    KC_GRV,  KC_7,    KC_8,    KC_9,    KC_BSLS, KC_ALGR, KC_LGUI, KC_LCTL, KC_LALT, KC_LSFT,
-    KC_NP,   KC_NP,   KC_DOT,  KC_0,    KC_MINS, KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
+    KC_BSLS, KC_1,    KC_2,    KC_3,    KC_EQL,  KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_RST,
+    KC_QUOT, KC_4,    KC_5,    KC_6,    KC_MINS, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
+    KC_GRV,  KC_7,    KC_8,    KC_9,    KC_0,    KC_ALGR, KC_LGUI, KC_LCTL, KC_LALT, KC_LSFT,
+    KC_NP,   KC_NP,   KC_LBRC, KC_RBRC, KC_SPC,  KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
   ),
   [NSSL] = LAYOUT_miryoku(
-    KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_RST,
-    KC_COLN, KC_DLR,  KC_PERC, KC_CIRC, KC_PLUS, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
-    KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_PIPE, KC_ALGR, KC_LGUI, KC_LCTL, KC_LALT, KC_LSFT,
-    KC_NP,   KC_NP,   KC_GT,   KC_RPRN, KC_UNDS, KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
+    KC_PIPE, KC_EXLM, KC_AT,   KC_HASH, KC_PLUS, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_RST,
+    KC_DQUO, KC_DLR,  KC_PERC, KC_CIRC, KC_UNDS, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
+    KC_TILD, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_ALGR, KC_LGUI, KC_LCTL, KC_LALT, KC_LSFT,
+    KC_NP,   KC_NP,   KC_LCBR, KC_RCBR, KC_SPC,  KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
   )
 };
