@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 #endif
   [NAVR] = LAYOUT_miryoku(
-    KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_AGIN, KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE,
+    KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,   LGUI(KC_A), LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), LGUI(KC_V),
     KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NU,
     KC_LSFT, KC_LALT, KC_LCTL, KC_LGUI, KC_ALGR, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_INS,
     KC_NP,   KC_NP,   KC_NA,   KC_NA,   KC_NA,   KC_ENT,  KC_BSPC, KC_DEL,  KC_NP,   KC_NP
