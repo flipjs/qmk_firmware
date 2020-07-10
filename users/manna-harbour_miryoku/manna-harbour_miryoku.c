@@ -8,7 +8,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q,              KC_W,              KC_E,              KC_R,              KC_T,              KC_Y,              KC_U,              KC_I,              KC_O,              KC_P,
     KC_A,              KC_S,              KC_D,              KC_F,              KC_G,              KC_H,              KC_J,              KC_K,              KC_L,              KC_SCLN,
     LSFT_T(KC_Z),      LALT_T(KC_X),      LCTL_T(KC_C),      LGUI_T(KC_V),      ALGR_T(KC_B),      ALGR_T(KC_N),      LGUI_T(KC_M),      LCTL_T(KC_COMM),   LALT_T(KC_DOT),    LSFT_T(KC_SLSH),
-    KC_NP,             KC_NP,             LT(MEDR, KC_TAB),  LT(MOUR, KC_ESC),  LT(NAVR, KC_SPC),  LT(NSSL, KC_ENT),  LT(NSL, KC_BSPC),  LT(FUNL, KC_DEL),  KC_NP,             KC_NP
+    KC_NP,             KC_NP,             LT(MEDR, KC_ESC),  LT(MOUR, KC_TAB),  LT(NAVR, KC_SPC),  LT(NSSL, KC_ENT),  LT(NSL, KC_BSPC),  LT(FUNL, KC_DEL),  KC_NP,             KC_NP
   ),
 #elif defined MIRYOKU_BASE_DVORAK
   [BASE] = LAYOUT_miryoku(
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_PSCR,  KC_F1,   KC_F2,   KC_F3,   KC_F12, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
     KC_SLCK,  KC_F4,   KC_F5,   KC_F6,   KC_F11, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
     KC_PAUS,  KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_ALGR, KC_LGUI, KC_LCTL, KC_LALT, KC_LSFT,
-    KC_NP,    KC_NP,   KC_CAPS, KC_ESC,  KC_SPC, KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
+    KC_NP,    KC_NP,   KC_CAPS, KC_TAB,  KC_SPC, KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
   ),
   [NSL] = LAYOUT_miryoku(
     KC_BSLS, KC_1,    KC_2,    KC_3,    KC_EQL,  KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
