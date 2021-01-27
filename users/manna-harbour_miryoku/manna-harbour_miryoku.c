@@ -2,6 +2,20 @@
 
 #include "manna-harbour_miryoku.h"
 
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case MT(MOD_LCTL,KC_C):
+            return TAPPING_TERM + 20;
+        case MT(MOD_LGUI,KC_V):
+            return TAPPING_TERM - 10;
+        case MT(MOD_LSFT,KC_Z):
+        case MT(MOD_LSFT,KC_SLSH):
+            return TAPPING_TERM - 20;
+        default:
+            return TAPPING_TERM;
+    }
+}
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [BASE] = LAYOUT_miryoku(
