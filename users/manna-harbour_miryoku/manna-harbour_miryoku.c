@@ -5,10 +5,10 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [BASE] = LAYOUT_miryoku(
-KC_Q,               KC_W,               KC_E,               KC_R,               KC_T,                  KC_Y,         KC_U,               KC_I,                  KC_O,                 KC_P,
-KC_A,               KC_S,               KC_D,               KC_F,               KC_G,                  KC_H,         KC_J,               KC_K,                  KC_L,                 LT(FUNL,KC_SCLN),
-MT(MOD_LSFT,KC_Z),  MT(MOD_LALT,KC_X),  MT(MOD_LCTL,KC_C),  MT(MOD_LGUI,KC_V),  MEH_T(KC_B),           MEH_T(KC_N),  MT(MOD_LGUI,KC_M),  MT(MOD_LCTL,KC_COMM),  MT(MOD_LALT,KC_DOT),  MT(MOD_LSFT,KC_SLSH),
-KC_NP,       KC_NP,       MO(NSSL),           MO(NSL),           LT(NAVR,KC_SPC),    LT(NAVR,KC_ENT),    MT(MOD_LCTL,KC_BSPC),  KC_LSFT,    KC_NP,    KC_NP
+KC_Q,               KC_W,               KC_E,               KC_R,               KC_T,             KC_Y,             KC_U,                  KC_I,                  KC_O,                 KC_P,
+KC_A,               KC_S,               KC_D,               KC_F,               KC_G,             KC_H,             KC_J,                  KC_K,                  KC_L,                 LT(FUNL,KC_SCLN),
+MT(MOD_LSFT,KC_Z),  MT(MOD_LALT,KC_X),  MT(MOD_LCTL,KC_C),  MT(MOD_LGUI,KC_V),  MEH_T(KC_B),      MEH_T(KC_N),      MT(MOD_LGUI,KC_M),     MT(MOD_LCTL,KC_COMM),  MT(MOD_LALT,KC_DOT),  MT(MOD_LSFT,KC_SLSH),
+KC_NP,              KC_NP,              MO(NSSL),           MO(NSL),            LT(NAVR,KC_SPC),  LT(NAVR,KC_ENT),  MT(MOD_LCTL,KC_BSPC),  KC_LGUI,               KC_NP,                KC_NP
 ),
 [NAVR] = LAYOUT_miryoku(
 KC_ESC,      KC_NA,       KC_UP,          KC_NA,         LCTL(KC_P),  KC_NA,         KC_NA,    KC_NA,    KC_NA,    KC_NA,
