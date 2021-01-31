@@ -2,6 +2,8 @@
 
 MOUSEKEY_ENABLE = yes # Mouse keys
 EXTRAKEY_ENABLE = yes # Audio control and System control
+BACKLIGHT_ENABLE = no
+RGBLIGHT_ENABLE = no
 
 SRC += manna-harbour_miryoku.c # keymap
 

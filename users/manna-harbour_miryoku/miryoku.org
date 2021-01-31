@@ -519,12 +519,12 @@ included from keymap or layout keymap.c if needed.
 #define KC_NU KC_NO // available but not used
 
 // non-KC_ keycodes
-#define KC_RST RESET
-#define KC_TOG RGB_TOG
-#define KC_MOD RGB_MOD
-#define KC_HUI RGB_HUI
-#define KC_SAI RGB_SAI
-#define KC_VAI RGB_VAI
+// #define KC_RST RESET
+// #define KC_TOG RGB_TOG
+// #define KC_MOD RGB_MOD
+// #define KC_HUI RGB_HUI
+// #define KC_SAI RGB_SAI
+// #define KC_VAI RGB_VAI
 
 <<table-enums()>>
 #+END_SRC
