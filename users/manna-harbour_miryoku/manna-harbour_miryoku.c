@@ -41,9 +41,9 @@ KC_LSFT,     KC_LALT,  KC_LCTL,  KC_LGUI,  LCTL(KC_N),  KC_GRV,   KC_7,     KC_8
 KC_NP,       KC_NP,    KC_NA,    KC_NA,    KC_SPC,      KC_ENT,   KC_BSPC,  KC_NA,  KC_NP,  KC_NP
 ),
 [FUN] = LAYOUT_miryoku(
-KC_PSCR,  KC_F1,  KC_F2,  KC_F3,    KC_F10,  KC_NA,  KC_NA,  KC_NA,  KC_NA,  RESET,
-KC_SLCK,  KC_F4,  KC_F5,  KC_F6,    KC_F11,  KC_NA,  KC_NA,  KC_NA,  KC_NA,  KC_NA,
-KC_PAUS,  KC_F7,  KC_F8,  KC_F9,    KC_F12,  KC_NA,  KC_NA,  KC_NA,  KC_NA,  KC_NA,
-KC_NP,    KC_NP,  KC_NA,  KC_CAPS,  KC_INS,  KC_NA,  KC_NA,  KC_NA,  KC_NP,  KC_NP
+KC_PSCR,  KC_F1,  KC_F2,  KC_F3,    KC_F10,  KC_NA,  KC_NA,   KC_NA,  KC_NA,  RESET,
+KC_SLCK,  KC_F4,  KC_F5,  KC_F6,    KC_F11,  KC_NA,  KC_NA,   KC_NA,  KC_NA,  KC_NA,
+KC_PAUS,  KC_F7,  KC_F8,  KC_F9,    KC_F12,  KC_N,   KC_NA,   KC_NA,  KC_NA,  KC_NA,
+KC_NP,    KC_NP,  KC_NA,  KC_CAPS,  KC_INS,  KC_NA,  KC_LSFT, KC_NA,  KC_NP,  KC_NP
 )
 };
